@@ -22,10 +22,6 @@ func main() {
 		c.JSON(200, gin.H{ "message": "in post"} )
 	})
 
-	router.DELETE("/users", func(c *gin.Context){
-		c.JSON(200, gin.H{ "message": "in delete"} )
-	})
-
 	router.GET("/items", func(c *gin.Context) {
 		c.JSON(200, gin.H{ "message": "in get"} )
 	})
@@ -34,7 +30,7 @@ func main() {
 		c.JSON(200, gin.H{ "message": "in post"} )
 	})
 
-	router.DELETE("/items", func(c *gin.Context){
+	router.DELETE("/all", func(c *gin.Context){
 		c.JSON(200, gin.H{ "message": "in delete"} )
 	})
 
