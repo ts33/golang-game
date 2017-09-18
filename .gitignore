@@ -1,0 +1,8 @@
+# project configuration
+.idea
+
+# data folder
+/data/data
+
+# private notes
+/private
